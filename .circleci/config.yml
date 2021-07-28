@@ -4,13 +4,13 @@ orbs:
 workflows:
   deploy_infrastructure:
     jobs:
-      - terraform/install:
-          checkout: true
-          context: terraform
-          persist-workspace: true
-          arch: amd64
-          os: linux
-          terraform_version: 0.11.8
+#       - terraform/install:
+#           checkout: true
+#           context: terraform
+#           persist-workspace: true
+#           arch: amd64
+#           os: linux
+#           terraform_version: 0.11.8
 #       - terraform/fmt:
 #           checkout: true
 #           context: terraform
