@@ -3,14 +3,14 @@ terraform {
 }
 
 variable "region" {
-  type    = string
+  type    = "string"
   default = "ap-northeast-1"
 }
 
 provider "aws" {
-  region = var.region
+  region = "${var.region}"
 }
 
 output "region" {
-  value = var.region
+  value = "${var.region}"
 }
