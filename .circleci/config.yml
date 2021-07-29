@@ -33,3 +33,4 @@ workflows:
               only: master
           requires:
             - terraform/plan
+          type: approval
